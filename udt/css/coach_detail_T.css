@@ -1,0 +1,115 @@
+.topNav .catMenu,
+.topNav .userMenu {
+    display: none;
+}
+.topNav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav .logo {
+    margin-left: 40px;
+}
+.bottomNav {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    padding: 13px 50px;
+    background-color: #fff;
+    border-top: 1px solid rgba(0, 0, 0, 0.30);
+    position: fixed;
+    bottom: 0;
+    z-index: 20;
+}
+.bottomNav a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    font-size: 16px;
+}
+.bottomNav a:nth-of-type(3) {
+    color: #8530ff;
+}
+.bottomNav a:hover {
+    color: #8530ff;
+}
+iconify-icon {
+    font-size: 30px;
+}
+.coachDetail {
+  padding: 0 0 0 0;
+}
+.detailInner {
+  display: flex;
+  flex-direction: column;
+  height: auto
+}
+.detailInTop {
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  width: auto;
+  gap: 50px;
+}
+.inTopLeft {
+  gap: 30px;
+  width: 767px;
+  padding: 30px 10px 0 10px;
+  height: auto;
+  justify-content: flex-start;
+}
+.inTopRight {
+  display: flex;
+  align-items: flex-start;
+  width: 767px;
+  padding: 0 0 0 0;
+}
+.coachInfo {
+  width: 100%;
+  height: auto;
+  overflow: initial;
+  padding: 0 0 0 60px;
+}
+.coachSlider {
+  width: 700px;
+}
+.detailInBottom span {
+  font-size: 24px;
+  font-weight: 600;
+}
+.percent {
+  width: auto;
+}
+.lesson {
+  max-width: 565px;
+}
+
+.coachInfo> div {
+  display: flex;
+  position: inherit;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* const textWrapper = document.querySelector('.text-wrapper');
+const text = document.querySelector('.text');
+const moreText = document.querySelector('.more-text');
+const lessText = document.querySelector('.less-text');        
+
+// 더보기 텍스트 클릭시 이벤트
+moreText.addEventListener('click', () => {
+
+moreText.style.display = 'none'; // 더보기 텍스트 삭제
+lessText.style.display = 'inline-block'; // 줄이기 텍스트 표시
+text.style.display = 'inline-block'; // 텍스트의 속성을 -webkit-box에서 일반 inline-block 으로 변경
+});
+
+// 줄이기 텍스트 클릭시 이벤트
+lessText.addEventListener('click', () => {
+
+lessText.style.display = 'none'; // 줄이기 텍스트 삭제
+moreText.style.display = 'inline-block'; // 더보기 텍스트 표시
+text.style.display = '-webkit-box'; // 텍스트의 속성을 다시 -webkit-box로 표시
+}); */
