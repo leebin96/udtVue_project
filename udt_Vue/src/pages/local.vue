@@ -1,16 +1,17 @@
 <template>
-    <v-container>
+    <div>
         <h1>Local Page</h1>
-        <!-- 로컬 페이지 콘텐츠 -->
-    </v-container>
+        <KakaoMap :latitude="37.5665" :longitude="126.9780" :level="3" />
+    </div>
 </template>
-
+  
 <script>
+import KakaoMap from '@/components/KakaoMap.vue';
+
 export default {
-    name: 'LocalPage',
+    components: {
+        KakaoMap
+    }
 };
 </script>
-
-<style scoped>
-/* 페이지별 스타일을 여기에 추가합니다. */
-</style>
+  

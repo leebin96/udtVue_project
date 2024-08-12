@@ -1,9 +1,9 @@
 <template>
-    <v-header app>
+    <header app>
         <v-container>
             <span>&copy; UDT VUE PROJECT</span>
         </v-container>
-    </v-header>
+    </header>
 </template>
 
 <script>
