@@ -1,20 +1,23 @@
-/**
- * main.js
- *
- * Bootstraps Vuetify and other plugins then mounts the App`
- */
+import { createApp } from 'vue';
+import { createPinia } from 'pinia';
+import App from './App.vue';
+import router from './router'; // 라우터 추가
+import { registerPlugins } from '@/plugins';
+import { useKakao } from 'vue3-kakao-maps/@utils';
 
-// Plugins
-import { registerPlugins } from '@/plugins'
+// Kakao Maps API 설정
+useKakao('87c7395bca867e7b398f5fa02160309d');
 
-// Components
-import App from './App.vue'
+const app = createApp(App);
 
-// Composables
-import { createApp } from 'vue'
+// Pinia 플러그인 등록 (중복 방지)
+const pinia = createPinia();
+app.use(pinia);
 
-const app = createApp(App)
+// 라우터 추가
+app.use(router);
 
-registerPlugins(app)
+// 다른 플러그인 등록
+registerPlugins(app);
 
-app.mount('#app')
+app.mount('#app');
